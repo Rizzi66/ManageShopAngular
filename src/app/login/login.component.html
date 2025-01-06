@@ -1,0 +1,7 @@
+<form #signinForm="ngForm" (ngSubmit)="onSubmit(signinForm)">
+  <label for="name">Identifiant</label>
+  <input [(ngModel)]="name" name="name" />
+  <label for="password">Mot de passe</label>
+  <input [(ngModel)]="password" name="password" />
+  <input type="submit" value="Se connecter" />
+</form>
